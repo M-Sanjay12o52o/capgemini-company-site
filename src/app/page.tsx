@@ -184,7 +184,7 @@ export default function Home() {
                     Capgemini Engineering
                   </h1>
                   <br />
-                  <p className="m-4 text-white text-l">Helping the world's largest innovators engineer the products and services of tomorrow</p>
+                  <p className="m-4 text-white text-l">Helping the world&apos;s largest innovators engineer the products and services of tomorrow</p>
                   <Image className="m-4 mt-4" src={'/CapgeminiEngineering.svg'} width={250} height={250} alt="logo-invent-white" />
                   <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Find out more</button>
                 </div>
