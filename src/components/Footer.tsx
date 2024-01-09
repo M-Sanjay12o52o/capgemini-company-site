@@ -8,9 +8,9 @@ interface FooterProps {
 }
 
 const Footer: FC<FooterProps> = ({ }) => {
-    return <div className='w-full h-screen bg-lime-500 pt-32'>
-        <div className='mt-4 mr-4 ml-4 mb-0 bg-red-400 h-80 flex flex-row justify-around'>
-            <div className='bg-orange-300 flex flex-col w-52 p-4'>
+    return <div className='w-full h-screen  pt-32'>
+        <div className='mt-4 mr-4 ml-4 mb-0  h-80 flex flex-row justify-around'>
+            <div className='flex flex-col w-52 p-4'>
                 <Logo />
                 <p className='text-lg mt-2'>
                     Our brands:
@@ -21,7 +21,7 @@ const Footer: FC<FooterProps> = ({ }) => {
                     <Image className='mt-8 pb-8' src='/LogoSogeti.svg' alt='Sogeti Logo' width={200} height={100} />
                 </div>
             </div>
-            <div className='bg-green-400 flex flex-col w-52 p-4'>
+            <div className='flex flex-col w-52 p-4'>
                 <Link className='p-1 hover:underline' href={"/insights"}>Insights</Link>
                 <Link className='p-1 hover:underline' href={"/industries"}>Industries</Link>
                 <Link className='p-1 hover:underline' href={"/services"}>Services</Link>
@@ -30,7 +30,7 @@ const Footer: FC<FooterProps> = ({ }) => {
                 <Link className='p-1 hover:underline' href={"/about-us"}>About us</Link>
                 <Link className='p-1 hover:underline' href={"/contact-us"}>Contact us</Link>
             </div>
-            <div className='bg-slate-600 flex flex-col w-52 p-4'>
+            <div className=' flex flex-col w-52 p-4'>
                 <Link className='p-1 hover:underline' href='/accessibility'>Accessibility</Link>
                 <Link className='p-1 hover:underline' href='/cookie-policy'>Cookie policy</Link>
                 <Link className='p-1 hover:underline' href='/cookie-settings'>Cookie settings</Link>
@@ -45,7 +45,7 @@ const Footer: FC<FooterProps> = ({ }) => {
         <br />
         <br />
         <br />
-        <div className='w-full h-20 bg-pink-400 flex justify-between items-center pl-8 pr-8'>
+        <div className='w-full h-20  flex justify-between items-center pl-8 pr-8'>
             <div>
                 <p className='font-sans'>
                     All rights reserved by Capgemini. Copyright ©2024
@@ -53,22 +53,23 @@ const Footer: FC<FooterProps> = ({ }) => {
             </div>
             <div className='flex space-x-4'>
                 <Link href={"/"}>
-                    <Image src="/Linkedin.webp" alt="LinkedIn" width={36} height={24} />
+                    <Image src="/Linkedin.webp" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="LinkedIn" width={42} height={24} />
+                    <p className="opacity-0 group-hover:opacity-100 absolute top-full left-1/2 transform -translate-x-1/2 bg-blue-400 text-white rounded-lg p-1 text-xs">LinkedIn</p>
                 </Link>
                 <Link href={"/"}>
-                    <Image src="/X@1x.svg" alt="Twitter" width={36} height={24} />
+                    <Image src="/X@1x.svg" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="Twitter" width={42} height={24} />
                 </Link>
                 <Link href={"/"}>
-                    <Image src="/Instagram.webp" alt="Instagram" width={36} height={24} />
+                    <Image src="/Instagram.webp" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="Instagram" width={42} height={24} />
                 </Link>
                 <Link href={"/"}>
-                    <Image src="/Facebook.webp" alt="Facebook" width={36} height={24} />
+                    <Image src="/Facebook.webp" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="Facebook" width={42} height={24} />
                 </Link>
                 <Link href={"/"}>
-                    <Image src="/YouTube.webp" alt="YouTube" width={36} height={24} />
+                    <Image src="/YouTube.webp" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="YouTube" width={42} height={24} />
                 </Link>
                 <Link href={"/"}>
-                    <Image src="/Glassdoor.webp" alt="Glassdoor" width={36} height={24} />
+                    <Image src="/Glassdoor.webp" className='border-2 border-black hover:bg-cyan-600 rounded-full' alt="Glassdoor" width={42} height={24} />
                 </Link>
             </div>
         </div>
