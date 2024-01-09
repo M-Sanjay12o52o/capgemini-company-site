@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import {
   Carousel,
   CarouselContent,
@@ -8,6 +7,7 @@ import {
 } from "@/components/ui/carousel"
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,15 +18,54 @@ export default function Home() {
             CONNECTED PRODUCTS
           </h1>
           <br />
-          <p className="text-white  p-4 text-xl">Enhancing consumers lives with technology</p>
+          <h2 className="text-white size-64 p-4 text-2xl font-bold">Enhancing consumers lives with technology</h2>
         </div>
       </section >
-      <section id="services" className="h-screen  flex justify-center items-center">
-        <div className="flex">
-          <img src="/bannerone.webp" alt="Banner One" className="mx-4" style={{ maxWidth: '300px' }} />
-          <img src="/banner2.webp" alt="Banner Two" className="mx-4" style={{ maxWidth: '300px' }} />
-          <img src="/banner3.webp" alt="Banner Three" className="mx-4" style={{ maxWidth: '300px' }} />
+      <section id="services" className="h-screen  flex justify-start items-center">
+        <Image src="/bannerone.webp" alt="Banner One" className="mx-4" width={600} height={200} />
+        <div className="w-auto p-16 bg-white shadow-lg rounded-lg">
+          <h1 className="font-sans text-2xl">Business, meet tech.</h1>
+          <br />
+          <p className="font-sans">World Economic Forum Annual Meeting in Davos</p>
+          <br />
+          <button className="flex p-2 items-center font-sans border-black border-2 w-40 rounded-3xl">
+            <span className="mr-2">Read more</span>
+            <ArrowRight />
+          </button>
         </div>
+      </section>
+      <section id="services" className="h-screen  flex justify-center items-center">
+        <Image src="/banner2.webp" alt="Banner Two" className="mx-4" width={600} height={200} />
+        <div className="w-auto p-16 bg-white shadow-2xl rounded-lg">
+          <p className="font-sans">Capgemini Research Institute</p>
+          <br />
+          <h1 className="font-sans text-2xl">Climate tech research</h1>
+          <br />
+          <Link className="" href={"/"}>
+            <p className="text-sm font-sans text-cyan-500">CAPGEMINI RESEARCH INSTITUTE</p>
+          </Link>
+        </div>
+      </section>
+      <section id="services" className="h-screen  flex justify-end items-center">
+        <div className="w-auto h-96 p-16 bg-blue-600 shadow-2xl rounded-lg">
+          <p className="font-sans">--- Capgemini Research Institute</p>
+          <br />
+          <h1 className="font-sans text-2xl">CMO playbook Gen AI</h1>
+          <br />
+          <Link className="bottom-3" href={"/"}>
+            <p className="text-sm font-sans text-cyan-500">CAPGEMINI RESEARCH INSTITUTE</p>
+          </Link>
+        </div>
+        <div className="w-auto p-16 bg-white shadow-2xl rounded-lg">
+          <p className="font-sans">--- Report</p>
+          <br />
+          <h1 className="font-sans text-2xl">Creative and generative AI</h1>
+          <br />
+          <Link className="" href={"/"}>
+            <p className="text-sm font-sans text-cyan-500">CAPGEMINI RESEARCH INSTITUTE</p>
+          </Link>
+        </div>
+        <Image src="/banner3.webp" alt="Banner Three" className="mx-4" width={600} height={200} />
       </section>
       <section id="products" className="h-screen ">
         <Carousel>
