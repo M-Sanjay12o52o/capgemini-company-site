@@ -22,7 +22,9 @@ export default function Home() {
         </div>
       </section >
       <section id="services" className="h-screen  flex justify-start items-center">
-        <Image src="/bannerone.webp" alt="Banner One" className="mx-4" width={600} height={200} />
+        <div className="overflow-hidden relative inline-block cursor-pointer shadow-lg">
+          <Image src="/bannerone.webp" alt="Banner One" className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" width={600} height={200} />
+        </div>
         <div className="w-auto p-16 bg-white shadow-lg rounded-lg">
           <h1 className="font-sans text-2xl">Business, meet tech.</h1>
           <br />
@@ -35,7 +37,7 @@ export default function Home() {
         </div>
       </section>
       <section id="services" className="h-screen  flex justify-center items-center">
-        <Image src="/banner2.webp" alt="Banner Two" className="mx-4" width={600} height={200} />
+        <Image src="/banner2.webp" alt="Banner Two" className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" width={600} height={200} />
         <div className="w-auto p-16 bg-white shadow-2xl rounded-lg">
           <p className="font-sans">Capgemini Research Institute</p>
           <br />
@@ -65,7 +67,7 @@ export default function Home() {
             <p className="text-sm font-sans text-cyan-500">CAPGEMINI RESEARCH INSTITUTE</p>
           </Link>
         </div>
-        <Image src="/banner3.webp" alt="Banner Three" className="mx-4" width={600} height={200} />
+        <Image src="/banner3.webp" alt="Banner Three" className="mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" width={600} height={200} />
       </section>
       <section id="products" className="h-screen ">
         <Carousel>
