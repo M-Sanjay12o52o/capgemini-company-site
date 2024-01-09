@@ -17,7 +17,7 @@ export default function Home() {
             CONNECTED PRODUCTS
           </h1>
           <br />
-          <p className="text-white bg-blue-600 p-4 text-xl">Enhancing consumers' lives with technology</p>
+          <p className="text-white bg-blue-600 p-4 text-xl">Enhancing consumers lives with technology</p>
         </div>
       </section >
       <section id="services" className="h-screen bg-green-500">

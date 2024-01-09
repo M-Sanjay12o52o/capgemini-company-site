@@ -8,7 +8,7 @@ interface pageProps {
 
 }
 
-const page: FC<pageProps> = ({ }) => {
+const Page: FC<pageProps> = ({ }) => {
     const [form, setForm] = useState<boolean>(false)
 
     const handleForm = () => {
@@ -48,4 +48,4 @@ const page: FC<pageProps> = ({ }) => {
     </>
 }
 
-export default page
+export default Page
