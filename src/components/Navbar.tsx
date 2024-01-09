@@ -25,7 +25,7 @@ export default function Navbar() {
                     <Link href="./services" className="text-blue-500 p-4 hover:underline">Services</Link>
                     <Link href="./careers" className="text-blue-500 p-4 hover:underline">Careers</Link>
                     <Link href="./news" className="text-blue-500 p-4 hover:underline">News</Link>
-                    <Link href="./about" className="text-blue-500 p-4 hover:underline">About us</Link>
+                    <Link href="./aboutus" className="text-blue-500 p-4 hover:underline">About us</Link>
                 </div>
                 <div className="flex items-center">
                     <Link href="" className="text-blue-500 flex items-center">

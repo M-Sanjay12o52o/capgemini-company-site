@@ -84,8 +84,92 @@ export default function Home() {
           </div>
         </Carousel>
       </section>
-      <section id="contact" className="h-screen ">
-        <Footer />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <section id="report" className="h-screen ">
+        <Carousel>
+          <CarouselContent>
+            <CarouselItem className="w-full h-screen relative overflow-hidden">
+              <div className="flex">
+                <div className="w-1/2">
+                  <Image src={"/sectionthree.webp"} width={1500} height={500} alt="Slide 1" />
+                </div>
+                <div className="w-1/2 bg-purple-950">
+                  <h1 className="font-semibold text-white text-6xl p-4">Integrated Annual Report 2022</h1>
+                  <br />
+                  <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Read more</button>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem className="w-full h-screen relative overflow-hidden">
+              <div className="flex">
+                <div className="w-1/2">
+                  <Image src={"/sectionthreetwo.webp"} width={1500} height={500} alt="Slide 1" />
+                </div>
+                <div className="w-1/2 bg-purple-950">
+                  <h1 className="font-semibold text-white text-6xl p-4">OUR PASSION FOR SPORT</h1>
+                  <br />
+                  <p className="text-white p-8 font-sans">
+                    Bringing expertise and passion for innovation and technology to World Rugby, the Ryder Cup and motorsport.
+                  </p>
+                  <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Discover more</button>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem className="w-full h-screen relative overflow-hidden">
+              <div className="flex">
+                <div className="w-1/2">
+                  <Image src={"/sectionthreethree.jpg"} width={500} height={500} alt="Slide 3" layout="responsive" objectFit="cover" />
+                </div>
+                <div className="w-1/2 bg-purple-950">
+                  <h1 className="font-semibold text-white text-6xl p-4">
+                    Capgemini Invent
+                  </h1>
+                  <br />
+                  <p className="m-4 text-white text-l">Our powerhouse of innovation, design and transformation.</p>
+                  <Image className="m-4 mt-4" src={'/logo-invent-white.svg'} width={250} height={250} alt="logo-invent-white" />
+                  <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Read more</button>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem className="w-full h-screen relative overflow-hidden">
+              <div className="flex">
+                <div className="w-1/2">
+                  <Image src={"/sectionthreefour.jpg"} width={1500} height={500} alt="Slide 2" />
+                </div>
+                <div className="w-1/2 bg-purple-950">
+                  <h1 className="font-semibold text-white text-6xl p-4">
+                    Capgemini Engineering
+                  </h1>
+                  <br />
+                  <p className="m-4 text-white text-l">Helping the world's largest innovators engineer the products and services of tomorrow</p>
+                  <Image className="m-4 mt-4" src={'/CapgeminiEngineering.svg'} width={250} height={250} alt="logo-invent-white" />
+                  <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Find out more</button>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem className="w-full h-screen relative overflow-hidden">
+              <div className="flex">
+                <div className="w-1/2">
+                  <Image src={"/sectointhreefive.webp"} width={1500} height={500} alt="Slide 1" />
+                </div>
+                <div className="w-1/2 bg-purple-950">
+                  <h1 className="font-semibold text-white text-6xl p-4">Capgemini Research Institute</h1>
+                  <br />
+                  <p className="m-4 text-white text-l">Our number 1 global think-tank</p>
+                  <button className="bottom-3 ml-12 mt-12 rounded-lg border-2 border-white w-44 h-12 text-white">Read more</button>
+                </div>
+              </div>
+            </CarouselItem>
+          </CarouselContent>
+          <div>
+            <CarouselPrevious className="absolute w-16 h-16 bg-blue-300 top-full left-1/2 transform -translate-y-1/2 -translate-x-1/2" size={"icon"} />
+            <CarouselNext className="absolute w-16 h-16 bg-blue-300 top-full left-1/2 transform -translate-y-1/2 translate-x-1/2" size={"icon"} />
+          </div>
+        </Carousel>
       </section>
     </div >
   );
