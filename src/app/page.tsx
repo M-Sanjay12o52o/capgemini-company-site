@@ -13,12 +13,18 @@ export default function Home() {
   return (
     <div>
       <section id="about" className="h-screen " style={{ backgroundImage: "url('/mainbackground.jpg')" }}>
-        <div className=" p-8 pt-56 pl-28 w-96 h-52 ">
-          <h1 className="font-bold text-5xl text-white">
-            CONNECTED PRODUCTS
-          </h1>
+        <div className="relative bg-blue-500 bg-opacity-50 w-1/2 h-96 top-28 left-8">
+          <div className="m-12">
+            <h1 className="text-white font-medium text-6xl p-8 transition-colors duration-500  hover:bg-cyan-500  bg-gradient-to-r ">
+              CONNECTED PRODUCTS
+            </h1>
+          </div>
           <br />
-          <h2 className="text-white size-64 p-4 text-2xl font-bold">Enhancing consumers lives with technology</h2>
+          <div>
+            <h2 className="text-white size-64 p-4 pl-8 text-2xl font-bold">
+              Enhancing consumers' lives with technology
+            </h2>
+          </div>
         </div>
       </section >
       <section id="services" className="h-screen  flex justify-start items-center">
