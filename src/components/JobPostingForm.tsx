@@ -25,10 +25,9 @@ const JobPostingForm: FC = () => {
     };
 
     const [job, setJob] = useState<JobPosting>(initialJobState);
-    const [showForm, setShowForm] = useState<boolean>(false);
 
     const onXClick = () => {
-        setShowForm((prevState) => !prevState)
+
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -40,21 +39,22 @@ const JobPostingForm: FC = () => {
         e.preventDefault();
         try {
             // Post the job details to the server using axios.post
-            await axios.post('http://localhost:3001/admin/createJob', job);
-
+            await axios.post('http://localhost:3001/admin/createjob', job);
+            // Clear the form after successful submission
             setJob(initialJobState);
+            // Handle any other actions after successful posting
         } catch (error) {
+            // Handle error cases
             console.error('Error posting job:', error);
         }
     };
 
     return (
-        <Card className='flex flex-col p-4 w-1/2 ml-72'>
-            {/* <X onClick={onXClick} /> */}
+        <Card className='flex flex-col p-4 w-1/2'>
             <form onSubmit={handleSubmit} className='p-4'>
+                <X />
                 <Grid container spacing={2} direction="column">
                     <Grid item>
-                        <p className='text-2xl mb-4 font-semibold'>Posting Jobs</p>
                         <TextField
                             type="text"
                             label="Job Title"
@@ -125,7 +125,7 @@ const JobPostingForm: FC = () => {
                         />
                     </Grid>
                     <Grid item>
-                        <Button className='bg-blue-600' type="submit" variant="contained" color="primary">
+                        <Button type="submit" variant="contained" color="primary">
                             Post Job
                         </Button>
                     </Grid>

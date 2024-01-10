@@ -48,7 +48,11 @@ const LoginForm: FC<LoginFormProps> = () => {
                 password,
             });
 
-            router.push('/');
+            if (userType === "user") {
+                router.push('/');
+            } else if (userType === "admin") {
+                router.push('/dashboard');
+            }
 
             console.log('Data sent:', response.data);
         } catch (error) {

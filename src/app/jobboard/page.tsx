@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FC } from 'react';
 
 interface JobListingProps { }
@@ -28,6 +29,7 @@ const JobListing: FC<JobListingProps> = () => {
 
                             {" "}we would love to hear from you!
                         </p>
+                        <Link href={"/openPositions"}>Open Positions</Link>
                         <div className=''>
                             <h2 className='text-2xl font-bold mb-4'>Key Responsibilities</h2>
                             <ul className='list-disc mb-8 text-center'>
