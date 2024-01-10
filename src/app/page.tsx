@@ -22,7 +22,7 @@ export default function Home() {
           <br />
           <div>
             <h2 className="text-white size-64 p-4 pl-8 text-2xl font-bold">
-              Enhancing consumers' lives with technology
+              Enhancing consumers&apos; lives with technology
             </h2>
           </div>
         </div>

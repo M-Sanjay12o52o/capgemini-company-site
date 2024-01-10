@@ -39,7 +39,7 @@ const JobListing: FC<JobListingProps> = () => {
 
                             <h2 className='text-2xl font-bold mb-4'>Requirements</h2>
                             <ul className='list-disc text-center mb-8'>
-                                <li className='list-none'>Bachelor's degree in Computer Science or related field.</li>
+                                <li className='list-none'>Bachelor&apos;s degree in Computer Science or related field.</li>
                                 <li className='list-none'>Proven experience in IT project management.</li>
                                 <li className='list-none'>Strong knowledge of current IT trends and technologies.</li>
                                 {/* Add more requirements as needed */}
