@@ -18,7 +18,7 @@ export default function Navbar() {
             {/* Main navigation */}
             <nav className="sticky top-0 z-50 h-24 ml-10 mr-10 flex justify-between items-center px-4 py-2">
                 <div className="flex items-center space-x-4 ">
-                    <Link href="./capgemini" className="text-blue-500 pr-8">
+                    <Link href="./" className="text-blue-500 pr-8">
                         <Logo />
                     </Link>
                     <Link href="./insights" className="text-blue-500 p-4 hover:underline">Insights</Link>
