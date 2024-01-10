@@ -20,7 +20,7 @@ const JobListing: FC<JobListingProps> = () => {
 
     useEffect(() => {
         // Fetch jobs from your API
-        axios.get<Job[]>('http://localhost:3001/jobs') // Specify the expected response type with <Job[]>
+        axios.get<Job[]>(`${process.env.BACKEND_URL}/jobs`) // Specify the expected response type with <Job[]>
             .then((response) => {
                 // Assuming data is an array of job objects
                 setJobs(response.data);

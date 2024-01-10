@@ -32,7 +32,7 @@ const Page: FC<pageProps> = ({ }) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3001/users', {
+            const response = await axios.post(`${process.env.BACKEND_URL}/users`, {
                 firstName,
                 lastName,
                 jobTitle,

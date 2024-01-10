@@ -46,7 +46,7 @@ const SignUpForm: FC<SignUpFormProps> = () => {
         setPassword('');
 
         try {
-            const response = await axios.post('http://localhost:3001/users/signup', {
+            const response = await axios.post(`${process.env.BACKEND_URL}/users/signup`, {
                 firstName,
                 lastName,
                 email,
