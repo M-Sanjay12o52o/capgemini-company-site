@@ -2,6 +2,7 @@
 
 import axios from 'axios';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { FC, useState } from 'react';
 
 interface LoginFormProps { }
@@ -10,7 +11,8 @@ const LoginForm: FC<LoginFormProps> = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [userType, setUserType] = useState('user');
-    console.log(userType)
+
+    const router = useRouter()
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value);
@@ -34,10 +36,19 @@ const LoginForm: FC<LoginFormProps> = () => {
         setPassword('');
 
         try {
-            const response = await axios.post('http://localhost:3001/users/login', {
+            let url = '';
+            if (userType === 'user') {
+                url = 'http://localhost:3001/users/login';
+            } else if (userType === 'admin') {
+                url = 'http://localhost:3001/admin/login';
+            }
+
+            const response = await axios.post(url, {
                 email,
                 password,
             });
+
+            router.push('/');
 
             console.log('Data sent:', response.data);
         } catch (error) {

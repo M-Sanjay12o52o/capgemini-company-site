@@ -40,6 +40,8 @@ const SignUpForm: FC<SignUpFormProps> = () => {
         console.log('Password:', password);
         console.log('User Type:', userType);
 
+        setFirstName('');
+        setLastName('');
         setEmail('');
         setPassword('');
 
@@ -63,16 +65,16 @@ const SignUpForm: FC<SignUpFormProps> = () => {
             <form onSubmit={handleSubmit} className="flex flex-col items-center">
                 <p className='mb-2 mt-0 pt-0'>Sign Up below</p>
                 <input
-                    type="email"
-                    placeholder="Email"
+                    type="text"
+                    placeholder="First Name"
                     value={firstName}
                     onChange={handleFirstNameChange}
                     className="border border-gray-400 rounded-md px-3 py-2 mb-4"
                     required
                 />
                 <input
-                    type="email"
-                    placeholder="Email"
+                    type="text"
+                    placeholder="Last Name"
                     value={lastName}
                     onChange={handleLastNameChange}
                     className="border border-gray-400 rounded-md px-3 py-2 mb-4"
