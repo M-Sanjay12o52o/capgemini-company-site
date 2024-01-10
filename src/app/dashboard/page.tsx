@@ -6,7 +6,7 @@ interface pageProps {
 
 const page: FC<pageProps> = ({ }) => {
     return <div>
-
+        welcome to dashboard
     </div>
 }
 

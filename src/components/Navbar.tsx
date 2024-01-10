@@ -8,6 +8,7 @@ export default function Navbar() {
             {/* Top section for Contact, Investors, and Language switcher */}
             <div className="bg-gray-200 py-2 text-center">
                 <div className="flex items-center justify-end space-x-4 mr-8">
+                    <Link href="/jobboard" className="text-blue-500">Job board</Link>
                     <Link href="/contact-us" className="text-blue-500">Contact us</Link>
                     <Link href="/investors" className="text-blue-500">Investors</Link>
                     <span className="text-blue-500">Global | EN</span>
@@ -26,6 +27,7 @@ export default function Navbar() {
                     <Link href="./careers" className="text-blue-500 p-4 hover:underline">Careers</Link>
                     <Link href="./news" className="text-blue-500 p-4 hover:underline">News</Link>
                     <Link href="./aboutus" className="text-blue-500 p-4 hover:underline">About us</Link>
+                    <Link href="./login" className="text-blue-500 p-4 hover:underline">LogIn</Link>
                 </div>
                 <div className="flex items-center">
                     <Link href="" className="text-blue-500 flex items-center">
