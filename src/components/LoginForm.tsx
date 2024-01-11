@@ -38,9 +38,9 @@ const LoginForm: FC<LoginFormProps> = () => {
         try {
             let url = '';
             if (userType === 'user') {
-                url = `${process.env.BACKEND_URL}/users/login`
+                url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/users/login`
             } else if (userType === 'admin') {
-                url = `${process.env.BACKEND_URL}/admin/login`
+                url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/admin/login`
             }
 
             const response = await axios.post(url, {
