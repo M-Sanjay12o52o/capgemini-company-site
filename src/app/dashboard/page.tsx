@@ -40,7 +40,7 @@ const JobPostingForm: FC = () => {
         e.preventDefault();
         try {
             // Post the job details to the server using axios.post
-            await axios.post(`${process.env.BACKEND_URL}/admin/createJob`, job);
+            await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/admin/createJob`, job);
 
             setJob(initialJobState);
         } catch (error) {

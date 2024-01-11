@@ -31,8 +31,10 @@ const Page: FC<pageProps> = ({ }) => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        console.log(process.env.NEXT_PUBLIC_BACKEND_URL, "backendurl")
+
         try {
-            const response = await axios.post(`${process.env.BACKEND_URL}/users`, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/users`, {
                 firstName,
                 lastName,
                 jobTitle,

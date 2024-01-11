@@ -45,8 +45,10 @@ const SignUpForm: FC<SignUpFormProps> = () => {
         setEmail('');
         setPassword('');
 
+        console.log(process.env.NEXT_PUBLIC_BACKEND_URL, "backendurl")
+
         try {
-            const response = await axios.post(`${process.env.BACKEND_URL}/users/signup`, {
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/users/signup`, {
                 firstName,
                 lastName,
                 email,
