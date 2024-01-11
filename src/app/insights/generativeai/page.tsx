@@ -8,7 +8,7 @@ const Page: FC<PageProps> = () => {
             {/* Hero Image */}
             <div className="mb-6">
                 <img
-                    src="path/to/generative-ai-image.jpg" // Replace with the actual path to your Generative AI image
+                    src="/insights/generativeaihero.webp" // Replace with the actual path to your Generative AI image
                     alt="Generative AI Image"
                     className="w-full h-auto rounded-md"
                 />
